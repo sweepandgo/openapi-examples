@@ -51,7 +51,7 @@ document.getElementById("send_data").onclick = function() {
             "initial_cleanup_required": true,
         }
         data = {...data, ...additional_data}
-        fetch("https://staging-openapi.sweepandgo.net/api/v1/residential/onboarding", {
+        fetch("https://openapi.sweepandgo.com/api/v1/residential/onboarding", {
             method: "PUT",
             headers: {
                 'Content-Type': 'application/json',
