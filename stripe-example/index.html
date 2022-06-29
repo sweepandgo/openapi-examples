@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Onboarding Form Example - Stripe</title>
+        <!-- Load stripe -->
+        <script src="https://js.stripe.com/v3/"></script>
+        <link rel="stylesheet" href="assets/css/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+    </head>
+    <body>
+        <label class="container">
+            <h2 class="example-title">Onboarding Form Example - Stripe</h2>
+            <!-- Form HTML start -->
+            <form id="client-onboarding" class="client-onboarding-form" action="#">
+                <div class="form-group">
+                    <input type="text" max="5" min="5" name="zip_code" id="zip_code" placeholder="Zip code"/>
+                </div>
+                <div class="form-group">
+                    <input type="number" name="number_of_dogs" id="number_of_dogs" placeholder="Number of dogs"/>
+                </div>
+                <div class="form-group">
+                    <select id="last_time_cleaned" name="last_time_yard_was_thoroughly_cleaned">
+                        <option value="" disabled selected>Last Time Yard Was Thoroughly Cleaned</option>
+                        <option value="one_week">One Week</option>
+                        <option value="two_weeks">Two Weeks</option>
+                        <option value="three_weeks">Three Weeks</option>
+                        <option value="one_month">One Month</option>
+                        <option value="two_months">Two Months</option>
+                        <option value="3-4_months">3-4 Months</option>
+                        <option value="5-6_months">5-6 Months</option>
+                        <option value="7-9_months">7-9 Months</option>
+                        <option value="10+_months">10+ Months</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <select id="clean_up_frequency" name="clean_up_frequency">
+                        <option value="0" disabled selected>Cleanup Frequency</option>
+                        <option value="once_a_week">Once a Week</option>
+                        <option value="two_times_a_week">Two Times a Week</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <input type="text" name="first_name" id="first_name" placeholder="First Name"/>
+                </div>
+                <div class="form-group">
+                    <input type="text" name="last_name" id="last_name" placeholder="Last Name"/>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" id="email" placeholder="hello@example.com"/>
+                </div>
+                <div class="form-group">
+                    <input type="text" name="home_address" id="home_address" placeholder="Home Address"/>
+                </div>
+                <div class="form-group">
+                    <input type="text" name="city" id="city" placeholder="City"/>
+                </div>
+                <!-- State select box will be auto populated w/ a script from script.js -->
+                <div class="form-group">
+                    <select id="state" name="state">
+                        <option value="0" disabled selected>State</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <input type="text" name="home_phone_number" id="home_phone_number" placeholder="Home Phone Number"/>
+                </div>
+                <div class="form-group">
+                    <input type="text" name="cell_phone_number" id="cell_phone_number" placeholder="Cell Phone Number"/>
+                </div>
+                <div class="form-group">
+                    <input type="text" name="name_on_card" id="name_on_card" placeholder="Name on Card"/>
+                </div>
+                <label class="stripe-label">
+                    <!-- Stripe card elements start -->
+                    <!-- Documentation https://stripe.com/docs/payments/accept-card-payments?platform=web&ui=elements#add-elements-to-your-payment-page -->
+                    <div id="card-element" class="stripe-field">
+                    <!-- Elements will create input elements here -->
+                    </div>
+                
+                    <!-- We'll put the error messages in this element -->
+                    <div id="card-errors" role="alert"></div>
+                    <!-- Stripe elements end -->
+                </label>
+
+                <div class="form-group">
+                    <button type="button" id="send_data">Submit</button>
+                </div>
+            </form>
+        </div>
+        <!-- Form HTML END -->
+    </body>
+    <!-- Load our javascript file -->
+    <script src="assets/js/script.js"></script> 
+</html>
