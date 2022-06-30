@@ -12,7 +12,7 @@
 
 This example containes a fully working demo of client onboarding process through **Sweep & Go Open API**.
 
-Keep in mind that this demo contains only the required fields, there are more of them that you may want to use for your purpose, to see them all, please refer to https://staging-openapi.sweepandgo.net/docs/#onboarding-new-clients-PUTapi-v1-residential-onboarding.
+Keep in mind that this demo contains only the required fields, there are more of them that you may want to use for your purpose, to see them all, please refer to https://openapi.sweepandgo.com/docs/#onboarding-new-clients-PUTapi-v1-residential-onboarding.
 
 # Running the demo
 Before you open the demo, you will need to add your **Sweep & Go Open API** key that you received from https://employee.sweepandgo.com/settings/open_api.
