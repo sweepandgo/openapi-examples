@@ -16,7 +16,7 @@ fetch(url)
     .catch(err => console.error(err));
 
 // Configure stripe
-let stripe = Stripe('pk_test_51CJP2iADskie72J5TBhkOG2662jueLT2jxTwpstXsi427KQfTgEM2Rrt4KKmiF0QjnRH5f16O8tjtLLWaYPgtiOk00povHqn0O');
+let stripe = Stripe('pk_live_YOUR_KEY');
 let elements = stripe.elements();
 
 // Set up Stripe.js and Elements to use in checkout form

@@ -17,7 +17,9 @@ Keep in mind that this demo contains only the required fields, there are more of
 # Running the demo
 Before you open the demo, you will need to add your **Sweep & Go Open API** key that you received from https://employee.sweepandgo.com/settings/open_api.
 
-To do that, open `assets/js/script.js` and replace the **YOUR-KEY** to the key you obtained from your Sweep & Go account the line **58** `'Authorization': 'Bearer YOUR-KEY'`.
+To do that, open `assets/js/script.js` and:
+1. Replace the **YOUR-KEY** to the key you obtained from your Sweep & Go account on line **58** `'Authorization': 'Bearer YOUR-KEY'`.
+2. Replace the **pk_live_YOUR_KEY** to your own public key provided from Stripe on line **19** `let stripe = Stripe('pk_live_YOUR_KEY');`
 
 
 # Screenshots
