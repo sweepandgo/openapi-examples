@@ -1,0 +1,75 @@
+.client-onboarding-form {
+    padding: 0;
+    border-radius: 3px;
+}
+
+.form-group {
+    display: flex;
+    justify-content: flex-start;
+    padding: .5em;
+}
+
+.form-group > label {
+    padding: 10px 20px;
+}
+
+.form-group > input {
+    background: white;
+    box-sizing: border-box;
+    font-weight: 400;
+    border: 1px solid #CFD7DF;
+    border-radius: 15px;
+    color: #32315E;
+    outline: none;
+    flex: 1;
+    padding: 10px 20px;
+    cursor: text;
+}
+
+.form-group > select {
+    background: white;
+    box-sizing: border-box;
+    font-weight: 400;
+    border: 1px solid #CFD7DF;
+    border-radius: 15px;
+    color: #32315E;
+    outline: none;
+    flex: 1;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.form-group > button {
+    background:  #0275d8;
+    padding: 10px 20px;
+    border-radius: 10%;
+    color: white;
+    border: 0;
+    margin-top: 2rem;
+}
+
+.example-title {
+    font-weight: 400;
+    color: #32315E;
+    padding: 5px 10px;
+}
+
+.inline input, .inline select {
+    margin:0 0.5rem;
+}
+
+.form-group.inline {
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 600px) {
+    .inline input, .inline select, .inline iframe {
+        width: 100%;
+        margin:0.5rem 0;
+    }
+    .form-group.inline {
+        flex-direction: column;
+        width: 96%;
+    }
+}
